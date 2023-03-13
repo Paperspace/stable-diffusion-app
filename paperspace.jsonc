@@ -11,11 +11,11 @@
   "command": [
     "python",
     "webui.py",
-    "'--share'",
-    "'--autolaunch'",
-    "'--listen'",
-    "'--port'",
-    "'7860'"
+    "--share",
+    "--autolaunch",
+    "--listen",
+    "--port",
+    "7860"
   ],
   "resources": {
     "instanceType": "P4000",
