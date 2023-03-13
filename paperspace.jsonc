@@ -1,0 +1,24 @@
+{
+  "$schema": "https://paperspace.com/config.schema.json",
+  "apiVersion": "latest",
+  // The name of the deployment
+  "name": "stable-diffusion-webui",
+  // The container image to use for the deployment
+  "image": "paperspace/stable-diffusion-webui-deployment:v1",
+  // Whether or not to enable the deployment. When disabled, the deployment will not run.
+  "enabled": true,
+  "port": 7860,
+  "command": [
+    "python",
+    "webui.py",
+    "'--share'",
+    "'--autolaunch'",
+    "'--listen'",
+    "'--port'",
+    "'7860'"
+  ],
+  "resources": {
+    "instanceType": "P4000",
+    "replicas": 1
+  }
+}
