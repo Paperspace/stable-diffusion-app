@@ -20,5 +20,10 @@
   "resources": {
     "instanceType": "P4000",
     "replicas": 1
+  },
+  "healthChecks": {
+    "readiness": {
+      "path": "/"
+    }
   }
 }
